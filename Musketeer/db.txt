@@ -1,0 +1,38 @@
+*
+SQLyog Ultimate v12.09 (64 BIT)
+MySQL - 10.1.31-MariaDB : DATABASE - musketeer
+*********************************************************************
+*/
+
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+/*Table structure for table `contact` */
+
+DROP TABLE IF EXISTS `daftarMenu`;
+
+CREATE TABLE `daftarMenu` (
+  `namaBarang` CHAR(64) NOT NULL,
+  `hargaBarang` CHAR(16) DEFAULT NULL,
+  `banyaknya` INT DEFAULT NULL,
+  `jmlharga` INT DEFAULT NULL,
+  PRIMARY KEY (`namaBarang`)
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+/*Data for the table `contact` */
+
+INSERT  INTO `daftarMenu`(`namaBarang`,`hargaBarang`,`banyaknya`,`jmlharga`) VALUES ('Nasi Goreng','10000','2','20000');
+INSERT  INTO `daftarMenu`(`namaBarang`,`hargaBarang`,`banyaknya`,`jmlharga`) VALUES ('Ifumie Goreng','15000','1','15000');
+INSERT  INTO `daftarMenu`(`namaBarang`,`hargaBarang`,`banyaknya`,`jmlharga`) VALUES ('Ayam Geprek','15000','3','45000');
+INSERT  INTO `daftarMenu`(`namaBarang`,`hargaBarang`,`banyaknya`,`jmlharga`) VALUES ('Capuchino','8000','2','16000');
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
